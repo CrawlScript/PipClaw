@@ -29,7 +29,10 @@ async function startBot() {
         
         if (qr) {
             console.log("\n--- SCAN THIS QR CODE WITH WHATSAPP ---");
-            qrcode.generate(qr, { small: true });
+            // On Windows, 'small: true' often causes character display issues in standard CMD/PowerShell.
+            // Using standard blocks (small: false) is more robust for scannability.
+            const isWindows = process.platform === "win32";
+            qrcode.generate(qr, { small: !isWindows });
         }
 
         if (connection === "close") {
@@ -49,7 +52,6 @@ async function startBot() {
                 const jid = msg.key.remoteJid;
                 if (jid === "status@broadcast") continue;
 
-                // Better text extraction
                 const text = msg.message?.conversation || 
                              msg.message?.extendedTextMessage?.text || 
                              msg.message?.buttonsResponseMessage?.selectedButtonId ||
