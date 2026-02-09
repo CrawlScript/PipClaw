@@ -1,5 +1,7 @@
 # 🐈 PipClaw
 
+> **重要通知**：从 0.0.11 版本（即 0.0.10 之后的所有版本）开始，本项目已更名为 **[MMClaw](https://github.com/CrawlScript/MMClaw)**。请前往新仓库获取后续更新和新版本。
+
 超轻量级、纯 Python 开发的 AI Agent 内核。
 
 **主页:** [https://github.com/CrawlScript/pipclaw](https://github.com/CrawlScript/pipclaw)

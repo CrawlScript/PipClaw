@@ -1,5 +1,7 @@
 # 🐈 PipClaw
 
+> **Important Note**: Starting from version 0.0.11 (versions after 0.0.10), this project has been renamed to **[MMClaw](https://github.com/CrawlScript/MMClaw)**. Please visit the new repository for all future updates and versions.
+
 The Ultra-Lightweight, Pure Python Kernel for AI Agents.
 
 **Home:** [https://github.com/CrawlScript/pipclaw](https://github.com/CrawlScript/pipclaw)
